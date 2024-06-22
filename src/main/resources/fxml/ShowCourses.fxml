@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="955.0" style="-fx-background-color: #cbefe4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Alzarrar.UniversityManagement.controller.ShowCoursesController">
+   <children>
+      <TableView fx:id="coursesDetail" layoutX="266.0" layoutY="36.0" prefHeight="433.0" prefWidth="682.0">
+         <columns>
+            <TableColumn fx:id="courseCodeColumn" minWidth="0.0" prefWidth="130.0" text="Course Code" />
+            <TableColumn fx:id="courseNameColumn" prefWidth="248.0" text="Course Name" />
+            <TableColumn fx:id="creditHoursColumn" minWidth="0.0" prefWidth="121.0" text="Credit Hours" />
+            <TableColumn fx:id="departmentName" minWidth="0.0" prefWidth="182.0" text="Department Name" />
+         </columns>
+      </TableView>
+      <TextField fx:id="courseCodeTextField" layoutX="33.0" layoutY="34.0" prefHeight="33.0" prefWidth="194.0" promptText="Course Code">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="courseNameTextField" layoutX="33.0" layoutY="77.0" prefHeight="33.0" prefWidth="194.0" promptText="Course Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="creditHoursTextField" layoutX="33.0" layoutY="123.0" prefHeight="33.0" prefWidth="194.0" promptText="Credit Hours">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="AddButton" layoutX="14.0" layoutY="476.0" mnemonicParsing="false" onAction="#onAddButtonPressed" prefHeight="34.0" prefWidth="116.0" style="-fx-background-color: #27ae60;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateButton" layoutX="144.0" layoutY="476.0" mnemonicParsing="false" onAction="#onUpdateButtonPressed" prefHeight="34.0" prefWidth="116.0" style="-fx-background-color: #2980b9;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteButton" layoutX="14.0" layoutY="525.0" mnemonicParsing="false" onAction="#onDeleteButtonPressed" prefHeight="34.0" prefWidth="116.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="527.0" layoutY="508.0" mnemonicParsing="false" onAction="#onBackButtonPressed" prefHeight="34.0" prefWidth="160.0" text="Back to main menu">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="clearButton" layoutX="144.0" layoutY="525.0" mnemonicParsing="false" onAction="#onClearButtonPressed" prefHeight="34.0" prefWidth="116.0" style="-fx-background-color: #f1c40f;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="departmentChoiceBox" layoutX="33.0" layoutY="168.0" prefHeight="25.0" prefWidth="194.0" style="-fx-background-color: #ffffff;" />
+
+   </children>
+</AnchorPane>

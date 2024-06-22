@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #cbefe4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Alzarrar.UniversityManagement.controller.SignupController">
+   <children>
+      <Button fx:id="SignUpButton" layoutX="316.0" layoutY="277.0" mnemonicParsing="false" onAction="#OnSignUpButtonPressed" prefHeight="31.0" prefWidth="118.0" style="-fx-background-radius: 15; -fx-background-color: #27ae60;" text="SignUp" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutY="384.0" prefHeight="42.0" prefWidth="750.0" style="-fx-background-color: #1d9ebd;">
+         <children>
+            <Label alignment="CENTER" layoutX="271.0" layoutY="8.0" text="Developed By Team Al-Zarrar">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="261.0" layoutY="337.0" text="Already have an account?" />
+      <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="264.0" layoutY="163.0" prefHeight="31.0" prefWidth="222.0" promptText="Password" style="-fx-border-color: #e47a6a;">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </PasswordField>
+      <PasswordField fx:id="confirmPasswordField" alignment="CENTER" layoutX="262.0" layoutY="218.0" prefHeight="31.0" prefWidth="222.0" promptText="Confirm Password" style="-fx-border-color: #e47a6a;">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </PasswordField>
+      <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="264.0" layoutY="65.0" prefHeight="26.0" prefWidth="222.0" promptText="Username" style="-fx-border-color: #e47a6a;">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailTextField" alignment="CENTER" layoutX="262.0" layoutY="115.0" prefHeight="26.0" prefWidth="222.0" promptText="Email" style="-fx-border-color: #e47a6a;">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="loginButton" layoutX="414.0" layoutY="330.0" mnemonicParsing="false" onAction="#OnLoginButtonPressed" prefHeight="31.0" prefWidth="76.0" style="-fx-background-radius: 15;" text="Login">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="roleLabel" layoutX="332.0" layoutY="10.0" textFill="#3586b8">
+         <font>
+            <Font name="Candara Bold" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
